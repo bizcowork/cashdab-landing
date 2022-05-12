@@ -1,0 +1,29 @@
+{
+  "name": "cashdab-landing",
+  "version": "1.0.0",
+  "description": "캐시답 랜딩 웹페이지",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch",
+    "build": "npx tailwindcss -i ./src/style.css -o ./dist/style.css && cp -r src/imgs dist && cp -f src/index.html dist/index.html && sed -i '.bak' 's/\\/dist\\/style.css/style.css/g' dist/index.html",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bizcowork/cashdab-landing.git"
+  },
+  "keywords": [
+    "캐시답",
+    "설문"
+  ],
+  "author": "dev@bizcowork.co.kr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bizcowork/cashdab-landing/issues"
+  },
+  "homepage": "https://github.com/bizcowork/cashdab-landing/",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
