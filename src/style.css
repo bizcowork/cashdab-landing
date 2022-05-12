@@ -7,7 +7,7 @@
 }
 
 .section-1 {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/src/imgs/section-1-bg.png');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imgs/section-1-bg.png');
 }
 
 .section-2 {
@@ -15,7 +15,7 @@
 }
 
 .section-3 {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/src/imgs/section-3-bg.png');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imgs/section-3-bg.png');
 }
 
 footer {
