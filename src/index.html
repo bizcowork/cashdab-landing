@@ -9,10 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link href="/dist/style.css" rel="stylesheet">
-  <!-- Alpine Plugins -->
-  <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
-  <!-- Alpine Core -->
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
 </head>
 <body x-data>
   <header class="bg-white py-4">
@@ -28,25 +25,22 @@
   <section class="section-1 sm:h-[400px] md:h-[700px] lg:h-[1000px] bg-cover">
     <div class="container relative lg:mx-auto text-white">
       <h2 class="absolute top-[150px] left-1/2 -ml-56 
-        font-dohyeon text-6xl text-center leading-snug 
-        transition duration-1000 ease-in-out opacity-0 -translate-y-1/2"
-        x-intersect="$el.classList.remove('opacity-0', '-translate-y-1/2'); $el.classList.add('opacity-100', 'translate-y-0')">
+        font-dohyeon text-6xl text-center leading-snug"
+        data-aos="fade-down">
         당신의 <span class="text-main-light">답</span>이<br>
         비즈니스의 <span class="text-main-light">답</span>이 되는<br>
         <span class="text-main-light">캐시답</span>
       </h2>
-      <img class="absolute top-[270px] left-1/2 ml-28 
-        transition duration-1000 ease-in-out opacity-0 translate-y-1/2"
-        x-intersect="$el.classList.remove('opacity-0', 'translate-y-1/2'); $el.classList.add('opacity-100', '-translate-y-0')"
+      <img class="absolute top-[270px] left-1/2 ml-28"
+        data-aos="fade-up"
         src="imgs/section-1-img.png" 
         alt="섹션1 이미지">
     </div>
   </section>
   <section class="section-2">
     <div class="container relative sm:h-[400px] md:h-[700px] lg:h-[1000px] lg:mx-auto text-white overflow-hidden">
-      <div class="absolute top-[150px] left-1/2 -ml-[570px]
-        transition duration-1000 ease-in-out opacity-0 translate-x-1/3"
-        x-intersect="$el.classList.remove('opacity-0', 'translate-x-1/3'); $el.classList.add('opacity-100', 'translate-x-0')">
+      <div class="absolute top-[150px] left-1/2 -ml-[570px]"
+        data-aos="fade-right">
         <h2 class="font-dohyeon text-6xl text-green-900">원터치로 설문을 완성!</h2>
         <p class="my-5 text-2xl leading-relaxed font-noto">
           핵심기능, 핵심가치, 핵심성능의<br>키워드만 넣으면 자동으로<br>설문을 생성합니다.
@@ -57,34 +51,29 @@
           <div class="px-6 pt-3 bg-white text-2xl leading-none text-main-light text-center font-jua">핵심<br>성능<br>+</div>
         </div>
       </div>
-      <img src="imgs/section-2-img.png" alt="섹션2 이미지" class="absolute -bottom-[150px] left-1/2 -ml-20 
-        transition duration-1000 ease-in-out opacity-0 -translate-x-1/3"
-        x-intersect="$el.classList.remove('opacity-0', '-translate-x-1/3'); $el.classList.add('opacity-100', 'translate-x-0')">
+      <img src="imgs/section-2-img.png" alt="섹션2 이미지" 
+        class="absolute -bottom-[150px] left-1/2 -ml-20"
+        data-aos="fade-left">
     </div>
   </section>
   <section class="section-3 sm:h-[400px] md:h-[700px] lg:h-[1000px] bg-cover">
     <div class="container lg:mx-auto grid place-items-center h-full text-white">
-      <h2 class="font-dohyeon text-6xl text-center leading-snug
-        transition duration-500 opacity-0 translate-y-1/4"
-        x-intersect="$el.classList.add('opacity-100', 'translate-y-0')">
+      <h2 class="font-dohyeon text-6xl text-center leading-snug"
+        data-aos="fade-down">
         세밀한 직업군 분<span class="text-main-light">류로 매칭률 Up!</span>
       </h2>
       <div class="flex w-full justify-center items-center">
-        <div class="basis-1/6 pt-20 
-          transition duration-1000 opacity-0 -translate-y-40"
-          x-intersect="$el.classList.remove('opacity-0', '-translate-y-40'); $el.classList.add('opacity-70', 'translate-y-0')">
+        <div class="basis-1/6 pt-20" data-aos="fade-down">
           <h3 class="font-dohyeon text-4xl text-main-light">오차범위 Down!</h3>
           <p class="mt-3 mb-5 text-xl leading-relaxed">세밀한 직업군 분류로,<br>설문 타켓의 오차 범위를<br>상당히 줄여줍니다.</p>
           <img src="imgs/section-3-col-1-img.png" alt="icons">
         </div>
         <div class="basis-1/3 text-center">
           <img src="imgs/section-3-img.png" alt="섹션3 이미지" 
-            class="mx-auto transition duration-1000 scale-50"
-            x-intersect="$el.classList.add('scale-100')">
+            class="mx-auto"
+            data-aos="zoom-in">
         </div>
-        <div class="basis-1/6 pt-20 
-          transition duration-1000 opacity-0 -translate-y-40"
-          x-intersect="$el.classList.remove('opacity-0', '-translate-y-40'); $el.classList.add('opacity-70', 'translate-y-0')">
+        <div class="basis-1/6 pt-20" data-aos="fade-down">
           <h3 class="font-dohyeon text-4xl text-main-light">시간낭비 Down!</h3>
           <p class="mt-3 mb-5 text-xl leading-relaxed">나에게 꼭 맞는<br>설문참여 알림으로<br>시간낭비를 줄여줍니다.</p>
           <img src="imgs/section-3-col-3-img.png" alt="icons">
@@ -95,42 +84,36 @@
   <section class="section-4 py-16 sm:h-[400px] md:h-[700px] lg:h-[1000px] bg-main-dark text-white">
     <div class="container relative lg:mx-auto h-full">
       <img src="imgs/section-4-img1.png" alt="섹션4 이미지"
-        class="absolute left-[50%] -ml-[650px] transition duration-1000 opacity-0 -translate-x-1/3"
-        x-intersect="$el.classList.remove('opacity-0', '-translate-x-1/3'); $el.classList.add('opacity-100', 'translate-x-0')">
-      <h3 class="absolute top-[130px] right-[50%] -mr-[470px] font-dohyeon text-6xl text-main-light
-        transition duration-1000 opacity-0 translate-x-1/3"
-        x-intersect="$el.classList.remove('opacity-0', 'translate-x-1/3'); $el.classList.add('opacity-100', 'translate-x-0')">
+        class="absolute left-[50%] -ml-[650px]"
+        data-aos="fade-right">
+      <h3 class="absolute top-[130px] right-[50%] -mr-[470px] font-dohyeon text-6xl text-main-light"
+        data-aos="fade-left">
         설문 참여하고 캐시받자!
       </h3>
-      <p class="absolute top-[210px] right-[50%] -mr-[470px] text-2xl leading-relaxed text-right
-        transition duration-1000 opacity-0 translate-x-1/3"
-        x-intersect="$el.classList.remove('opacity-0', 'translate-x-1/3'); $el.classList.add('opacity-80', 'translate-x-0')">
+      <p class="absolute top-[210px] right-[50%] -mr-[470px] text-2xl leading-relaxed text-right"
+        data-aos="fade-left">
         1개의 질문 답변만으로 1차 설문완성.<br>
         2차 설문까지 완료하면 캐시가 쏟아집니다.<br>
         캐시는 어플내에서 자유롭게 현급처럼<br>
         사용가능합니다.
       </p>
       <img src="imgs/section-4-img2.png" alt="섹션4 이미지2" 
-        class="absolute top-[450px] left-[50%] ml-[180px]
-        transition duration-1000 opacity-0 translate-x-1/3"
-        x-intersect="$el.classList.remove('opacity-0', 'translate-x-1/3'); $el.classList.add('opacity-80', 'translate-x-0')">
+        class="absolute top-[450px] left-[50%] ml-[180px]"
+        data-aos="fade-left">
     </div>
   </section>
   <section class="section-5 bg-main-light text-white">
     <div class="container lg:mx-auto py-10 h-full">
       <div class="relative h-[1077px]">
         <img src="imgs/section-5-img1.png" alt="섹션5 이미지" 
-          class="absolute left-1/2 -ml-[200px]
-            transition duration-500 ease-out scale-0"
-          x-intersect="$el.classList.remove('scale-0'); $el.classList.add('scale-100')">
-        <h3 class="absolute top-[90px] left-1/2 -ml-[550px] font-dohyeon text-6xl text-green-900
-          transition duration-1000 opacity-0"
-          x-intersect="$el.classList.remove('opacity-0'); $el.classList.add('opacity-100')">
+          class="absolute left-1/2 -ml-[200px]"
+          data-aos="zoom-out">
+        <h3 class="absolute top-[90px] left-1/2 -ml-[550px] font-dohyeon text-6xl text-green-900"
+          data-aos="fade">
           설문 결과를 한눈에!
         </h3>
-        <p class="absolute top-[170px] left-1/2 -ml-[550px] text-2xl leading-relaxed 
-          transition duration-1000 opacity-0"
-          x-intersect="$el.classList.remove('opacity-0'); $el.classList.add('opacity-80')">
+        <p class="absolute top-[170px] left-1/2 -ml-[550px] text-2xl leading-relaxed"
+          data-aos="fade">
           1차설문 결과와 2차설문 결과를<br>
           상세하게 확인 가능합니다.<br>
           KANO 설문결과로 품질 속성 등<br>
@@ -139,27 +122,23 @@
       </div>
       <div class="relative h-[821px]">
         <img src="imgs/section-5-img2.png" alt="섹션5 이미지2" 
-          class="absolute right-1/2 -mr-[400px]
-            transition duration-500 ease-out scale-0"
-          x-intersect:enter="$el.classList.remove('scale-0'); $el.classList.add('scale-100')">
+          class="absolute right-1/2 -mr-[400px]"
+          data-aos="zoom-out">
         <div class="absolute top-1/2 left-1/2 -mt-48 -ml-[400px]">
-          <h3 class="font-dohyeon text-6xl text-green-900
-            transition duration-1000 opacity-0"
-            x-intersect:enter="$el.classList.remove('opacity-0'); $el.classList.add('opacity-100')">
+          <h3 class="font-dohyeon text-6xl text-green-900"
+            data-aos="fade">
             전문 멘토에게<br>대면 컨설팅까지!
           </h3>
-          <p class="my-5 text-2xl leading-relaxed 
-            transition duration-1000 opacity-0"
-            x-intersect:enter="$el.classList.remove('opacity-0'); $el.classList.add('opacity-80')">
+          <p class="my-5 text-2xl leading-relaxed"
+            data-aos="fade">
             컨설팅은,<br>
             설문 결과를 활용하는데에<br>
             활용을 더욱 높일 수 있습니다.<br>
             어플에서 버튼하나로 신청하세요!
           </p>
           <a href="javascript:void(0)" 
-            class="py-2 px-10 rounded-full font-noto font-bold text-lg bg-white text-green-900
-              transition duration-1000 opacity-0"
-            x-intersect:enter="$el.classList.remove('opacity-0'); $el.classList.add('opacity-100')">
+            class="py-2 px-10 rounded-full font-noto font-bold text-lg bg-white text-green-900"
+            data-aos="fade">
             컨설팅 문의 보내기
           </a>
         </div>
@@ -183,5 +162,10 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
