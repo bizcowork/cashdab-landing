@@ -1,8 +1,13 @@
 const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
+    screens: {
+      xs: { max: '639px' },
+      ...defaultTheme.screens,
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
