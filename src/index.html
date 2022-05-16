@@ -11,69 +11,72 @@
   <link href="/dist/style.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
 </head>
-<body x-data>
+<body class="overflow-x-hidden text-white">
   <header class="bg-white py-4">
-    <div class="container m-auto flex items-center">
-      <div class="basis-1/2 pl-36">
+    <div class="container max-w-5xl m-auto px-8 xl:px-0 flex items-center">
+      <div class="basis-1/2">
         <img src="imgs/logo.png" alt="로고">
       </div>
       <div class="basis-1/2">
-        <a href="javascript:void(0)" class="block w-[15rem] m-auto py-1 text-center text-main-dark border-solid border-8 border-main-dark rounded-[2rem] text-3xl font-jua">앱 다운로드</a>
+        <a href="javascript:void(0)" 
+          class="block w-3/4 sm:w-[15rem] m-auto py-1 md:py-2
+            text-center text-main-dark 
+            border-solid border-8 border-main-dark rounded-full 
+            text-xl sm:text-2xl font-jua">
+          앱 다운로드
+        </a>
       </div>
     </div>
   </header>
-  <section class="section-1 sm:h-[400px] md:h-[700px] lg:h-[1000px] bg-cover">
-    <div class="container relative lg:mx-auto text-white">
-      <h2 class="absolute top-[150px] left-1/2 -ml-56 
-        font-dohyeon text-6xl text-center leading-snug"
+  <section class="section-1 bg-cover">
+    <div class="container max-w-5xl mx-auto pt-20 pb-10">
+      <h2 class="font-dohyeon text-5xl sm:text-6xl text-center leading-snug"
         data-aos="fade-down">
         당신의 <span class="text-main-light">답</span>이<br>
         비즈니스의 <span class="text-main-light">답</span>이 되는<br>
         <span class="text-main-light">캐시답</span>
       </h2>
-      <img class="absolute top-[270px] left-1/2 ml-28"
+      <img class="mx-auto w-3/4 sm:w-auto lg:-mt-12 lg:ml-[45vw] xl:ml-[40vw]" 
         data-aos="fade-up"
         src="imgs/section-1-img.png" 
         alt="섹션1 이미지">
     </div>
   </section>
   <section class="section-2">
-    <div class="container relative sm:h-[400px] md:h-[700px] lg:h-[1000px] lg:mx-auto text-white overflow-hidden">
-      <div class="absolute top-[150px] left-1/2 -ml-[570px]"
+    <div class="container max-w-5xl mx-auto pt-20 lg:flex justify-center">
+      <div class="lg:basis-1/2 lg:ml-auto text-center lg:text-left"
         data-aos="fade-right">
-        <h2 class="font-dohyeon text-6xl text-green-900">원터치로 설문을 완성!</h2>
+        <h2 class="lg:mt-16 font-dohyeon text-5xl lg:text-6xl text-green-900">원터치로 설문을 완성!</h2>
         <p class="my-5 text-2xl leading-relaxed font-noto">
           핵심기능, 핵심가치, 핵심성능의<br>키워드만 넣으면 자동으로<br>설문을 생성합니다.
         </p>
-        <div class="flex justify-start gap-4">
+        <div class="flex justify-center lg:justify-start gap-4">
           <div class="px-6 pt-3 bg-white text-2xl leading-none text-main-light text-center font-jua">핵심<br>기능<br>+</div>
           <div class="px-6 pt-3 bg-white text-2xl leading-none text-main-light text-center font-jua">핵심<br>가치<br>+</div>
           <div class="px-6 pt-3 bg-white text-2xl leading-none text-main-light text-center font-jua">핵심<br>성능<br>+</div>
         </div>
       </div>
-      <img src="imgs/section-2-img.png" alt="섹션2 이미지" 
-        class="absolute -bottom-[150px] left-1/2 -ml-20"
-        data-aos="fade-left">
+      <img src="imgs/section-2-img.png" alt="섹션2 이미지" class="mx-auto mt-10 lg:mt-0 lg:w-1/2">
     </div>
   </section>
-  <section class="section-3 sm:h-[400px] md:h-[700px] lg:h-[1000px] bg-cover">
-    <div class="container lg:mx-auto grid place-items-center h-full text-white">
-      <h2 class="font-dohyeon text-6xl text-center leading-snug"
+  <section class="section-3 bg-cover">
+    <div class="container max-w-5xl mx-auto pt-10 grid place-items-center">
+      <h2 class="px-10 font-dohyeon text-5xl lg:text-6xl text-center leading-snug"
         data-aos="fade-down">
         세밀한 직업군 분<span class="text-main-light">류로 매칭률 Up!</span>
       </h2>
-      <div class="flex w-full justify-center items-center">
-        <div class="basis-1/6 pt-20" data-aos="fade-down">
+      <div class="flex w-full justify-around lg:justify-between items-center flex-col lg:flex-row">
+        <div class="pt-10 lg:pt-20 order-1" data-aos="fade-down">
           <h3 class="font-dohyeon text-4xl text-main-light">오차범위 Down!</h3>
           <p class="mt-3 mb-5 text-xl leading-relaxed">세밀한 직업군 분류로,<br>설문 타켓의 오차 범위를<br>상당히 줄여줍니다.</p>
           <img src="imgs/section-3-col-1-img.png" alt="icons">
         </div>
-        <div class="basis-1/3 text-center">
+        <div class="mt-16 lg:my-10 order-3 lg:order-2 max-h-96 lg:max-h-screen overflow-hidden">
           <img src="imgs/section-3-img.png" alt="섹션3 이미지" 
             class="mx-auto"
             data-aos="zoom-in">
         </div>
-        <div class="basis-1/6 pt-20" data-aos="fade-down">
+        <div class="pt-20 order-2 lg:order-3" data-aos="fade-down">
           <h3 class="font-dohyeon text-4xl text-main-light">시간낭비 Down!</h3>
           <p class="mt-3 mb-5 text-xl leading-relaxed">나에게 꼭 맞는<br>설문참여 알림으로<br>시간낭비를 줄여줍니다.</p>
           <img src="imgs/section-3-col-3-img.png" alt="icons">
@@ -81,55 +84,56 @@
       </div>
     </div>
   </section>
-  <section class="section-4 py-16 sm:h-[400px] md:h-[700px] lg:h-[1000px] bg-main-dark text-white">
-    <div class="container relative lg:mx-auto h-full">
+  <section class="section-4 py-16 bg-main-dark lg:px-10">
+    <div class="container max-w-5xl mx-auto lg:relative">
       <img src="imgs/section-4-img1.png" alt="섹션4 이미지"
-        class="absolute left-[50%] -ml-[650px]"
+        class="h-fit lg:w-3/5"
         data-aos="fade-right">
-      <h3 class="absolute top-[130px] right-[50%] -mr-[470px] font-dohyeon text-6xl text-main-light"
-        data-aos="fade-left">
-        설문 참여하고 캐시받자!
-      </h3>
-      <p class="absolute top-[210px] right-[50%] -mr-[470px] text-2xl leading-relaxed text-right"
-        data-aos="fade-left">
-        1개의 질문 답변만으로 1차 설문완성.<br>
-        2차 설문까지 완료하면 캐시가 쏟아집니다.<br>
-        캐시는 어플내에서 자유롭게 현급처럼<br>
-        사용가능합니다.
-      </p>
-      <img src="imgs/section-4-img2.png" alt="섹션4 이미지2" 
-        class="absolute top-[450px] left-[50%] ml-[180px]"
-        data-aos="fade-left">
+      <div class="lg:absolute top-20 right-0">
+        <h3 class="text-center lg:text-right font-dohyeon text-5xl md:text-6xl text-main-light"
+          data-aos="fade-left">
+          설문 참여하고 캐시받자!
+        </h3>
+        <p class="lg:my-10 text-2xl leading-relaxed text-center lg:text-right"
+          data-aos="fade-left">
+          1개의 질문 답변만으로 1차 설문완성.<br>
+          2차 설문까지 완료하면 캐시가 쏟아집니다.<br>
+          캐시는 어플내에서 자유롭게 현급처럼<br>
+          사용가능합니다.
+        </p>
+        <img src="imgs/section-4-img2.png" alt="섹션4 이미지2"
+          class="hidden lg:block lg:ml-auto lg:mr-20"
+          data-aos="fade-left">
+      </div>
     </div>
   </section>
-  <section class="section-5 bg-main-light text-white">
-    <div class="container lg:mx-auto py-10 h-full">
-      <div class="relative h-[1077px]">
+  <section class="section-5 bg-main-light">
+    <div class="container max-w-5xl mx-auto py-10">
+      <div class="mb-16 sm:mb-0 overflow-hidden md:relative">
+        <div class="md:absolute md:top-20 md:left-[128px] lg:left-[90px] xl:left-[60px]">
+          <h3 class="text-center md:text-left font-dohyeon text-5xl md:text-6xl text-green-900"
+            data-aos="fade">
+            설문 결과를 한눈에!
+          </h3>
+          <p class="mt-10 text-center md:text-left text-2xl leading-relaxed"
+            data-aos="fade">
+            1차설문 결과와 2차설문 결과를<br>
+            상세하게 확인 가능합니다.<br>
+            KANO 설문결과로 품질 속성 등<br>
+            입체적인 결과를 확인하세요.
+          </p>
+        </div>
         <img src="imgs/section-5-img1.png" alt="섹션5 이미지" 
-          class="absolute left-1/2 -ml-[200px]"
+          class="md:float-right md:w-2/3 md:ml-[70vw] md:mt-20 lg:m-0 md:pl-40"
           data-aos="zoom-out">
-        <h3 class="absolute top-[90px] left-1/2 -ml-[550px] font-dohyeon text-6xl text-green-900"
-          data-aos="fade">
-          설문 결과를 한눈에!
-        </h3>
-        <p class="absolute top-[170px] left-1/2 -ml-[550px] text-2xl leading-relaxed"
-          data-aos="fade">
-          1차설문 결과와 2차설문 결과를<br>
-          상세하게 확인 가능합니다.<br>
-          KANO 설문결과로 품질 속성 등<br>
-          입체적인 결과를 확인하세요.
-        </p>
       </div>
-      <div class="relative h-[821px]">
-        <img src="imgs/section-5-img2.png" alt="섹션5 이미지2" 
-          class="absolute right-1/2 -mr-[400px]"
-          data-aos="zoom-out">
-        <div class="absolute top-1/2 left-1/2 -mt-48 -ml-[400px]">
-          <h3 class="font-dohyeon text-6xl text-green-900"
+      <div class="md:flex justify-center items-center">
+        <div class="md:basis-1/2 md:pl-32 text-center md:text-left">
+          <h3 class="font-dohyeon text-5xl md:text-6xl text-green-900"
             data-aos="fade">
             전문 멘토에게<br>대면 컨설팅까지!
           </h3>
-          <p class="my-5 text-2xl leading-relaxed"
+          <p class="mt-5 mb-10 text-2xl leading-relaxed"
             data-aos="fade">
             컨설팅은,<br>
             설문 결과를 활용하는데에<br>
@@ -142,12 +146,15 @@
             컨설팅 문의 보내기
           </a>
         </div>
+        <img src="imgs/section-5-img2.png" alt="섹션5 이미지2" 
+          class="h-fit mx-auto"
+          data-aos="zoom-out">
       </div>
     </div>
   </section>
-  <footer class="pt-10 pb-20 md:px-52 text-white">
-    <div class="container flex flex-row justify-center lg:mx-auto text-sm leading-relaxed">
-      <div class="basis-1/3 opacity-50">
+  <footer class="pt-10 pb-20 px-10 md:px-20 xl:px-0">
+    <div class="container max-w-5xl mx-auto sm:flex flex-row justify-around text-sm leading-relaxed">
+      <div class="basis-1/2 opacity-50">
         +<br>
         주식회사 비즈코웍<br>
         대표자 홍혜영 / 사업자등록번호 000-00-00000<br>
@@ -156,8 +163,8 @@
         e_ biz@Bizcowork.co.kr / t_ 02-000-0000<br>
         서울 서초구 강남대로99길 33 영빌딩 5층 501호
       </div>
-      <div class="basis-1/3">
-        <img src="imgs/logo-invert.png" alt="로고 역상" class="ml-auto mt-4 mb-3">
+      <div class="basis-1/2">
+        <img src="imgs/logo-invert.png" alt="로고 역상" class="ml-auto mt-4 mb-3 sm:w-4/5 lg:w-full">
         <p class="opacity-10 text-right">Since 2016<br>&copy; Bizcowork all rights reserved</p>
       </div>
     </div>
