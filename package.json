@@ -4,9 +4,9 @@
   "description": "캐시답 랜딩 웹페이지",
   "main": "tailwind.config.js",
   "scripts": {
-    "start": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch",
-    "build": "npx tailwindcss -i ./src/style.css -o ./dist/style.css && cp -r src/imgs dist && cp -f src/*.html dist/ && sed -i '.bak' 's/\\/dist\\/style.css/style.css/g' dist/index.html && rm -f ./dist/*.bak",
-    "deploy": "gh-pages -d dist",
+    "start": "npx tailwindcss -i ./src/style.css -o ./public/style.css --watch",
+    "build": "npx tailwindcss -i ./src/style.css -o ./public/style.css && cp -r src/imgs public && cp -f src/*.html public/ && sed -i '.bak' 's/\\/public\\/style.css/style.css/g' public/index.html && rm -f ./public/*.bak && cp -rf ./.well-known public/",
+    "deploy": "firebase deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,12 +18,9 @@
     "설문"
   ],
   "author": "dev@bizcowork.co.kr",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/bizcowork/cashdab-landing/issues"
   },
-  "homepage": "https://github.com/bizcowork/cashdab-landing/",
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  }
+  "homepage": "https://github.com/bizcowork/cashdab-landing/"
 }

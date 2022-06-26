@@ -1,7 +1,8 @@
 # 캐시답 랜딩 웹페이지
 
-https://bizcowork.github.io/cashdab-landing
-https://cashdab.bizcowork.co.kr
+https://cashdab.bizcowork.co.kr  
+또는  
+https://mobi-319901.web.app
 
 # 개발시 로컬 실행
 
