@@ -10,8 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link href="/dist/style.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+  <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
 </head>
-<body class="overflow-x-hidden text-white">
+<body class="snap-y snap-mandatory overflow-x-hidden overflow-y-scroll text-white">
   <header class="bg-white py-4">
     <div class="container max-w-5xl m-auto px-8 xl:px-0 flex items-center">
       <div class="basis-1/2">
@@ -28,7 +30,7 @@
       </div>
     </div>
   </header>
-  <section class="section-1 bg-cover">
+  <section class="section-1 snap-start bg-cover">
     <div class="container max-w-5xl mx-auto pt-20 pb-10">
       <h2 class="font-dohyeon text-5xl sm:text-6xl text-center leading-snug"
         data-aos="fade-down">
@@ -42,7 +44,7 @@
         alt="섹션1 이미지">
     </div>
   </section>
-  <section class="section-2">
+  <section class="section-2 snap-start">
     <div class="container max-w-5xl mx-auto pt-20 lg:flex justify-center">
       <div class="lg:basis-1/2 lg:ml-auto text-center lg:text-left"
         data-aos="fade-right">
@@ -59,7 +61,7 @@
       <img src="imgs/section-2-img.png" alt="섹션2 이미지" class="mx-auto mt-10 lg:mt-0 lg:w-1/2">
     </div>
   </section>
-  <section class="section-3 bg-cover">
+  <section class="section-3 snap-start bg-cover">
     <div class="container max-w-5xl mx-auto pt-10 grid place-items-center">
       <h2 class="px-10 font-dohyeon text-5xl lg:text-6xl text-center leading-snug"
         data-aos="fade-down">
@@ -84,7 +86,7 @@
       </div>
     </div>
   </section>
-  <section class="section-4 py-16 bg-main-dark lg:px-10">
+  <section class="section-4 snap-start py-16 bg-main-dark lg:px-10">
     <div class="container max-w-5xl mx-auto lg:relative">
       <img src="imgs/section-4-img1.png" alt="섹션4 이미지"
         class="h-fit lg:w-3/5"
@@ -107,7 +109,7 @@
       </div>
     </div>
   </section>
-  <section class="section-5 bg-main-light">
+  <section class="section-5 snap-start bg-main-light">
     <div class="container max-w-5xl mx-auto py-10">
       <div class="mb-16 sm:mb-0 overflow-hidden md:relative">
         <div class="md:absolute md:top-20 md:left-[128px] lg:left-[90px] xl:left-[60px]">
