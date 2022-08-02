@@ -502,6 +502,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .top-20 {
   top: 5rem;
 }
@@ -592,10 +609,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
 .h-fit {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.h-\[25vh\] {
+  height: 25vh;
 }
 
 .max-h-96 {
@@ -857,11 +886,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-green-900 {
-  color: #00582A;
+  color: #00582a;
 }
 
 .section-1 {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imgs/section-1-bg.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('imgs/section-1-bg.png');
 }
 
 .section-2 {
@@ -869,11 +899,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .section-3 {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imgs/section-3-bg.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('imgs/section-3-bg.png');
+}
+
+body > section[class^="section-"] {
+  /* Set full height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer {
   background-color: #454545;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+
+@media only screen and (max-device-width: 1366px) {
+  body > section[class^="section-"] {
+    background-attachment: scroll;
+  }
 }
 
 @media (min-width: 640px) {
