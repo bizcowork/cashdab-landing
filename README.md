@@ -5,6 +5,18 @@
 * https://cashdab.bizcowork.co.kr  
 * https://mobi-319901.web.app
 
+# 준비
+
+```bash
+brew install nodejs && \
+npm i -g firebase-tools && \
+curl https://bun.sh/install | bash
+```
+
+```bash
+bun install
+```
+
 # 개발시 로컬 실행
 
 ```bash
