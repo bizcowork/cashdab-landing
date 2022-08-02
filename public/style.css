@@ -502,14 +502,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.fixed {
-  position: fixed;
-}
-
-.relative {
-  position: relative;
-}
-
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -617,14 +609,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 50vh;
 }
 
+.h-\[25vh\] {
+  height: 25vh;
+}
+
 .h-fit {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.h-\[25vh\] {
-  height: 25vh;
 }
 
 .max-h-96 {
@@ -1029,10 +1021,6 @@ footer {
 @media (min-width: 1024px) {
   .lg\:absolute {
     position: absolute;
-  }
-
-  .lg\:relative {
-    position: relative;
   }
 
   .lg\:left-\[90px\] {
