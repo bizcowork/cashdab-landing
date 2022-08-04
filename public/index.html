@@ -11,6 +11,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
   <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
@@ -20,7 +22,7 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body class="snap-y snap-mandatory overflow-x-hidden overflow-y-scroll text-white">
+<body class="fullpage h-[100vh] overflow-x-hidden overflow-y-scroll text-white">
   <header class="bg-white py-4">
     <div class="container max-w-5xl m-auto px-8 xl:px-0 flex items-center">
       <div class="basis-1/2">
@@ -36,11 +38,12 @@
       </div>
     </div>
   </header>
-  <section class="section-1 snap-start bg-cover">
+  <i class="scroll-down-arrow fa-solid fa-chevron-down z-40"></i>
+  <section class="section-1 bg-cover">
     <div class="h-[100vh]"></div>
     <div class="sticky top-0 container max-w-5xl mx-auto pt-20 pb-10">
       <h2 class="font-dohyeon text-5xl sm:text-6xl text-center leading-snug" 
-        data-aos="fade-in" data-aos-mirror="false" data-aos-anchor=".section-1__keyframe-2">
+        data-aos="fade-in" data-aos-anchor=".section-1__keyframe-2">
         당신의 <span class="text-main-light">답</span>이<br>
         비즈니스의 <span class="text-main-light">답</span>이 되는<br>
         <span class="text-main-light">캐시답</span>
@@ -50,7 +53,7 @@
     </div>
     <div class="section-1__keyframe-2 h-[50vh]"></div>
   </section>
-  <section class="section-2 snap-start">
+  <section class="section-2">
     <div class="h-[50vh]"></div>
     <div class="sticky top-0 container max-w-5xl mx-auto pt-20 lg:flex justify-center">
       <div class="lg:basis-1/2 lg:ml-auto text-center lg:text-left" 
@@ -69,7 +72,7 @@
     </div>
     <div class="section-2__keyframe-2 h-[50vh]"></div>
   </section>
-  <section class="section-3 snap-start bg-cover">
+  <section class="section-3 bg-cover">
     <div class="h-[50vh]"></div>
     <div class="sticky top-0 container max-w-5xl mx-auto pt-10 grid place-items-center">
       <h2 class="px-10 font-dohyeon text-5xl lg:text-6xl text-center leading-snug" data-aos="fade-down">
@@ -95,7 +98,7 @@
     <div class="section-3__keyframe-3 h-[25vh]"></div>
     <div class="section-3__keyframe-4 h-[25vh]"></div>
   </section>
-  <section class="section-4 snap-start py-16 bg-main-dark lg:px-10">
+  <section class="section-4 py-16 bg-main-dark lg:px-10">
     <div class="h-[50vh]"></div>
     <div class="sticky top-0 container max-w-5xl mx-auto">
       <img src="imgs/section-4-img1.png" alt="섹션4 이미지" class="h-fit lg:w-3/5" data-aos="fade-right">
@@ -116,7 +119,7 @@
     <div class="section-4__keyframe-2 h-[25vh]"></div>
     <div class="section-4__keyframe-3 h-[25vh]"></div>
   </section>
-  <section class="section-5 snap-start bg-main-light">
+  <section class="section-5 bg-main-light">
     <div class="keyframe-1 h-[50vh]"></div>
     <div class="sticky top-0 container max-w-5xl mx-auto py-10">
       <div class="mb-16 sm:mb-0 overflow-hidden md:relative">
@@ -138,7 +141,7 @@
     <div class="section-5__keyframe-2 h-[25vh]"></div>
     <div class="section-5__keyframe-3 h-[25vh]"></div>
   </section>
-  <section class="section-6 snap-start bg-main-light">
+  <section class="section-6 bg-main-light">
     <div class="keyframe-1 h-[50vh]"></div>
     <div class="sticky top-0 container max-w-5xl mx-auto py-10">
       <div class="md:flex justify-center items-center">
@@ -146,14 +149,14 @@
           <h3 class="font-dohyeon text-5xl md:text-6xl text-green-900" data-aos="fade" data-aos-anchor=".section-6__keyframe-2">
             전문 멘토에게<br>대면 컨설팅까지!
           </h3>
-          <p class="mt-5 mb-10 text-2xl leading-relaxed" data-aos="fade" data-aos-anchor=".section-6__keyframe-2">
+          <p class="mt-5 mb-10 text-2xl leading-relaxed" data-aos="fade" data-aos-anchor=".section-6__keyframe-2" data-aos-delay="250">
             컨설팅은,<br>
             설문 결과를 활용하는데에<br>
             활용을 더욱 높일 수 있습니다.<br>
             어플에서 버튼하나로 신청하세요!
           </p>
           <a href="javascript:void(0)"
-            class="py-2 px-10 rounded-full font-noto font-bold text-lg bg-white text-green-900" data-aos="fade">
+            class="py-2 px-10 rounded-full font-noto font-bold text-lg bg-white text-green-900" data-aos="fade" data-aos-anchor=".section-6__keyframe-2" data-aos-delay="500">
             컨설팅 문의 보내기
           </a>
         </div>
@@ -163,7 +166,7 @@
     <div class="section-6__keyframe-2 h-[25vh]"></div>
     <div class="section-6__keyframe-3 h-[25vh]"></div>
   </section>
-  <footer class="pt-10 pb-20 px-10 md:px-20 xl:px-0">
+  <footer class="z-50 pt-10 pb-20 px-10 md:px-20 xl:px-0">
     <div class="container max-w-5xl mx-auto sm:flex flex-row justify-around text-sm leading-relaxed">
       <div class="basis-1/2 opacity-50">
         +<br>
@@ -181,9 +184,57 @@
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 1500 });
+
+    function scrollTrigger(selector, options = {}) {
+      let els = document.querySelectorAll(selector);
+      els = Array.from(els);
+      els.forEach(el => addObserver(el, options));
+    }
+
+    function addObserver(el, options) {
+      let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          console.log('intersectionRatio', entry.intersectionRatio);
+          // Element enters the viewport
+          if (entry.intersectionRatio !== 0) {
+            if (options.onEnter) {
+              options.onEnter(el);
+            }
+            // Element leaves the viewport 
+          } else {
+            if (options.onLeave) {
+              options.onLeave(el);
+            }
+          }
+        });
+      }, options);
+
+      observer.observe(el);
+    }
+
+    scrollTrigger('footer', {
+      onEnter: (el) => {
+        const scrollDownArrow = document.querySelector('.scroll-down-arrow');
+        scrollDownArrow.classList.add('hidden');
+      },
+      onLeave: (el) => {
+        const scrollDownArrow = document.querySelector('.scroll-down-arrow');
+        scrollDownArrow.classList.remove('hidden');
+      }
+    });
+
+    $(() => {
+      $('.fullpage').fullpage({
+        autoScrolling: true,
+        scrollHorizontally: true,
+        sectionSelector: 'section',
+      });
+    });
   </script>
 </body>
 

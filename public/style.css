@@ -519,6 +519,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .order-1 {
   order: 1;
 }
@@ -637,19 +645,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .basis-1\/2 {
   flex-basis: 50%;
-}
-
-.snap-y {
-  -ms-scroll-snap-type: y var(--tw-scroll-snap-strictness);
-      scroll-snap-type: y var(--tw-scroll-snap-strictness);
-}
-
-.snap-mandatory {
-  --tw-scroll-snap-strictness: mandatory;
-}
-
-.snap-start {
-  scroll-snap-align: start;
 }
 
 .flex-row {
@@ -879,6 +874,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-green-900 {
   color: #00582a;
+}
+
+.scroll-down-arrow {
+  position: fixed;
+  bottom: 0.5rem;
+  left: calc(50vw - 0.9rem);
+  font-size: 2rem;
+  color: gainsboro;
 }
 
 .section-1 {
