@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>compileBitcode</key>
+	<true/>
+	<key>destination</key>
+	<string>export</string>
+	<key>manifest</key>
+	<dict>
+		<key>appURL</key>
+		<string>https://picsum.photos/200/300</string>
+		<key>displayImageURL</key>
+		<string>https://picsum.photos/200/300</string>
+		<key>fullSizeImageURL</key>
+		<string>https://picsum.photos/1000/700</string>
+	</dict>
+	<key>method</key>
+	<string>ad-hoc</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.bizcowork.cashdab</key>
+		<string>CashDab ios_app_adhoc 1655913475</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>8E67D1E09713D84F059093933CD4DCE92B064D24</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>stripSwiftSymbols</key>
+	<true/>
+	<key>teamID</key>
+	<string>Q235UCCSZP</string>
+	<key>thinning</key>
+	<string>&lt;none&gt;</string>
+</dict>
+</plist>
