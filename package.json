@@ -5,7 +5,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "start": "npx tailwindcss -i ./src/style.css -o ./public/style.css --watch",
-    "build": "npx tailwindcss -i ./src/style.css -o ./public/style.css && cp -r src/imgs public && cp -f src/*.html public/ && sed -i '.bak' 's/\\/public\\/style.css/style.css/g' public/index.html && rm -f ./public/*.bak && cp -rf ./.well-known public/",
+    "build": "npx tailwindcss -i ./src/style.css -o ./public/style.css && cp -r src/imgs public && cp -f src/*.html public/  && cp -f src/adhoc/* public/adhoc/ && sed -i '.bak' 's/\\/public\\/style.css/style.css/g' public/index.html && rm -f ./public/*.bak && rm -f ./public/adhoc/*.log && cp -rf ./.well-known public/",
     "deploy": "firebase deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
