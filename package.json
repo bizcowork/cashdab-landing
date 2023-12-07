@@ -19,6 +19,7 @@
   ],
   "author": "dev@bizcowork.co.kr",
   "license": "UNLICENSED",
+  "private": true,
   "bugs": {
     "url": "https://github.com/bizcowork/cashdab-landing/issues"
   },
