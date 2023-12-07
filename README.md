@@ -23,7 +23,11 @@ bun install
 bun start
 ```
 
-VSCode -> Ctrl + P -> Open with live server
+## HTML 파일 웹브라우저로 렌더링
+
+1. VSCode 확장 중 Live Preview 설치
+2. 왼쪽 File explorer 패널에서 웹브라우저에서 렌더링을 원하는 html 파일 선택
+3. 마우스 오른쪽 클릭 후 Show Preview 메뉴 선택
 
 # 빌드
 
